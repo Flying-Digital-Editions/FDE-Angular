@@ -23,6 +23,12 @@ textarea{
   left: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .left {
+    height: 30vh;
+  }
+}
+
 .right {
   right: 0;
   height: 30vh;

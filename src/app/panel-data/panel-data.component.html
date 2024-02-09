@@ -8,7 +8,8 @@
                     <tr>
                         <td><b>{{ key }}</b></td>
                         <td class="cell">
-                            <img *ngIf="key === 'Image'"   [src]="entityInfo[key] !== '-' ? entityInfo[key] : ''" alt="Image" class="myImg">
+                            <img *ngIf="key === 'Image' && entityInfo[key]!== '-'"   [src]="entityInfo[key]" alt="Image" class="myImg">
+                            <img *ngIF="key === 'Image' && entityInfo[key] === '-'">Image not found
                             <img *ngIf="key === 'Flag'" [src]="entityInfo[key]" alt="Flag" class="myImg">
                         </td>
                     </tr>
